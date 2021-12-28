@@ -1,0 +1,96 @@
+body{
+    background: #F0F4Fd !important;
+}
+.shadow-xs{
+    box-shadow: rgb(0 0 0 / 5%) 0px 1px 4px !important;
+}
+.input-group-text{
+    color: #6c757d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-color: #EEF2F5;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.2rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-style: solid;
+    border-width: 1px 0px 2px 1px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.45rem 0.9rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-color: #EEF2F5;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.2rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+}
+
+.form-select{
+    display: block;
+    width: 100%;
+    padding: 0.45rem 2.7rem 0.45rem 0.9rem;
+    -moz-padding-start: calc(.9rem - 3px);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    background-size: 14px 10px;
+    border-color: #EEF2F5;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    appearance: none;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+}
+
+.select2-container .select2-selection--single, .select2-container--default .select2-selection--multiple {
+    border-color: #EEF2F5;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    height: calc(1.5em + 0.9rem + 2px);
+    background-color: #fff;
+    box-shadow: none;
+    outline: 0;
+}
+
+
+.select2-container--default .select2-selection--multiple{
+    border-color: #EEF2F5 !important;
+    border-style: solid !important;
+    border-width: 1px 2px 2px 1px !important;
+    height: calc(1.5em + 0.9rem + 2px);
+    background-color: #fff;
+    box-shadow: none;
+    outline: 0;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border-color: #EEF2F5;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    background-color: #fff;
+    color: #6c757d;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.action-icon {
+    color: #98a6ad;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 3px;
+}

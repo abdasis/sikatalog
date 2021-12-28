@@ -1,46 +1,85 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="en">
+<head>
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta charset="utf-8" />
+    <title>Sikatalog | Sistem informasi menampilkan produk perusahaan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Sikatalog adalah sistem informasi untuk menampilkan profil perusahaan dan menampilkan produk dari perusahaan" name="description" />
+    <meta content="Abd. Aziz" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="csrf-token" content="{{csrf_token()}}">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <!-- App css -->
+    <link href="{{asset('admin/css/config/default/bootstrap.min.css')}}" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+    <link href="{{asset('admin/css/config/default/app.min.css')}}" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link href="{{asset('admin/css/config/default/bootstrap-dark.min.css')}}" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+    <link href="{{asset('admin/css/config/default/app-dark.min.css')}}" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
 
-        @livewireStyles
+    <!-- icons -->
+    <link href="{{asset('admin/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{asset('admin/css/style.css')}}">
+    @livewireStyles
+</head>
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-sans antialiased">
-        <x-jet-banner />
+<!-- body start -->
+<body class="loading" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
 
-        <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
+<!-- Begin page -->
+<div id="wrapper">
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+    <!-- Topbar Start -->
+    <x-admin.navbar/>
+    <!-- end Topbar -->
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
+    <!-- ========== Left Sidebar Start ========== -->
+    <x-admin.sidebar/>
+    <!-- Left Sidebar End -->
 
-        @stack('modals')
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
 
-        @livewireScripts
-    </body>
+    <div class="content-page">
+        <div class="content">
+
+            <!-- Start Content-->
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <x-admin.breadcrumb/>
+                <!-- end page title -->
+
+                {{$slot}}
+
+            </div> <!-- container -->
+
+        </div> <!-- content -->
+
+        <!-- Footer Start -->
+        <x-admin.footer/>
+        <!-- end Footer -->
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+
+</div>
+<!-- END wrapper -->
+
+
+<!-- Vendor js -->
+<script src="{{asset('admin/js/vendor.min.js')}}"></script>
+
+<!-- App js-->
+<script src="{{asset('admin/js/app.min.js')}}"></script>
+
+
+</body>
 </html>
