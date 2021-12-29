@@ -33,6 +33,27 @@
                                 <li>
                                     <a href="#">Semua Artikel</a>
                                 </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#menuKategori" data-bs-toggle="collapse">
+                            <i class="fas fa-tags"></i>
+                            <span> Kategori </span>
+                            <span class="menu-arrow"></span>
+
+                        </a>
+                        <div class="collapse" id="menuKategori">
+                            <ul class="nav-second-level">
+                                <li>
+                                    <a href="{{route('kategori.tambah')}}">Tambah Kategori</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('kategori.semua')}}">Semua Kategori</a>
+                                </li>
+
                             </ul>
                         </div>
                     </li>
