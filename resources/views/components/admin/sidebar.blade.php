@@ -38,6 +38,25 @@
                     </li>
 
                     <li>
+                        <a href="#menuSlider" data-bs-toggle="collapse">
+                            <i class="fas fa-photo-video"></i>
+                            <span> Slider </span>
+                            <span class="menu-arrow"></span>
+
+                        </a>
+                        <div class="collapse" id="menuSlider">
+                            <ul class="nav-second-level">
+                                <li>
+                                    <a href="#">Tambah Slider</a>
+                                </li>
+                                <li>
+                                    <a href="#">Semua Slider</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
                         <a href="#menuHalaman" data-bs-toggle="collapse">
                             <i class="fas fa-file-alt"></i>
                             <span> Halaman </span>
@@ -113,12 +132,12 @@
                     </li>
 
                     <li>
-                        <a href="#menuPengguna" data-bs-toggle="collapse">
+                        <a href="#menuPengaturan" data-bs-toggle="collapse">
                             <i class="fas fa-cogs"></i>
                             <span> Pengaturan </span>
                             <span class="menu-arrow"></span>
                         </a>
-                        <div class="collapse" id="menuPengguna">
+                        <div class="collapse" id="menuPengaturan">
                             <ul class="nav-second-level">
                                 <li>
                                     <a href="#">General</a>

@@ -8,11 +8,15 @@
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "jantinnerezo/livewire-alert": "^2.2",
         "laravel/framework": "^8.75",
         "laravel/jetstream": "^2.5",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "livewire/livewire": "^2.5"
+        "livewire/livewire": "^2.5",
+        "rappasoft/laravel-livewire-tables": "^1.21",
+        "spatie/laravel-translatable": "^5.1",
+        "symfony/mailer": "^6.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
