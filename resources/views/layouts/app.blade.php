@@ -23,6 +23,7 @@
     <link href="{{asset('admin/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{asset('admin/css/style.css')}}">
     @livewireStyles
+    @stack('css')
 </head>
 
 <!-- body start -->
@@ -79,9 +80,13 @@
 
 <!-- App js-->
 <script src="{{asset('admin/js/app.min.js')}}"></script>
+
+<script src="https://cdn.tiny.cloud/1/3kubek8r1p1mz4kvit7hc1z2mxd8wgg551cbeu82qkmenprf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 @livewireScripts
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <x-livewire-alert::scripts />
+@stack('js')
 
 </body>
 </html>

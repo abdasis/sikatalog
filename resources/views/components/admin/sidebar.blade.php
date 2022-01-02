@@ -106,10 +106,10 @@
                         <div class="collapse" id="menuProduk">
                             <ul class="nav-second-level">
                                 <li>
-                                    <a href="#">Tambah Produk</a>
+                                    <a href="{{route('produk.tambah')}}">Tambah Produk</a>
                                 </li>
                                 <li>
-                                    <a href="#">Semua Produk</a>
+                                    <a href="{{route('produk.semua')}}">Semua Produk</a>
                                 </li>
                             </ul>
                         </div>

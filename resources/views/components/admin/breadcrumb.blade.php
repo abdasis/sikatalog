@@ -10,7 +10,7 @@
                         @endforeach
                     </ol>
                 </div>
-                <h4 class="page-title">{{Str::title(request()->segment(1))}}</h4>
+                <h4 class="page-title">{{Str::title(request()->segment(2))}}</h4>
             </div>
         </div>
     </div>

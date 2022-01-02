@@ -35,6 +35,13 @@ body{
     border-width: 1px 2px 2px 1px;
 }
 
+.tox-tinymce{
+    border-color: #EEF2F5 !important;
+    border-style: solid !important;
+    border-width: 1px 2px 2px 1px !important;
+
+
+}
 .form-select{
     display: block;
     width: 100%;
@@ -93,4 +100,14 @@ body{
     font-size: 14px;
     display: inline-block;
     padding: 0 3px;
+}
+
+.gambar{
+    height: 200px;
+    background: #f7f7f7;
+}
+
+.gambar img{
+    object-fit: cover;
+    position: center;
 }

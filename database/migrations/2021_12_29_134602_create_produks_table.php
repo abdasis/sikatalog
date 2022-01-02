@@ -19,9 +19,13 @@ class CreateProduksTable extends Migration
             $table->string('slug');
             $table->longText('deskripsi')->nullable();
             $table->string('kategori');
+            $table->string('gambar_unggulan')->nullable();
+            $table->enum('status', ['publish', 'arsip']);
+
             $table->unsignedBigInteger('dibuat_oleh');
             $table->unsignedBigInteger('diupdate_oleh');
             $table->unsignedBigInteger('dihapus_oleh');
+
             $table->softDeletes();
             $table->timestamps();
 
