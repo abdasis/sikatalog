@@ -13,6 +13,7 @@
                             <label for="">Nama Produk</label>
                             <input wire:model="nama_produk" type="text" class="form-control"
                                    placeholder="Masukan nama produk" name="" id="">
+                            <x-error-message error="nama_produk"/>
                         </div>
 
                         <div class="form-group mb-2">
@@ -21,6 +22,8 @@
                                 <textarea wire:model="deskripsi" class="form-control" name="" id="" cols="30"
                                           rows="10"></textarea>
                             </div>
+                            <x-error-message error="deskripsi"/>
+
                         </div>
 
                     </div>
@@ -32,11 +35,15 @@
                                 <option value="arsip">Draft</option>
                                 <option value="publish">Published</option>
                             </select>
+                            <x-error-message error="status"/>
+
                         </div>
 
                         <div class="form-group mb-2">
                             <label for="">Gambar Unggulan</label>
                             <input wire:model="gambar_unggulan" type="file" class="form-control" name="" id="">
+                            <x-error-message error="gambar_unggulan"/>
+
                         </div>
 
                         <div class="preview-gambar mb-2">
@@ -95,7 +102,8 @@
             content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
             setup: function (editor) {
                 editor.on('blur', function (e) {
-                    value = editor.getContent()
+                    value = editor.getContent();
+                    @this.set('deskripsi', value);
                 })
 
                 editor.on('init', function (e) {

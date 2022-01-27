@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Repositories\KategoriRepository;
 use App\Repositories\KategoriRepositoryInterface;
+use App\Repositories\ProdukRepository;
+use App\Repositories\ProdukRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoriesServiceProvider extends ServiceProvider
@@ -26,5 +28,6 @@ class RepositoriesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->bind(KategoriRepositoryInterface::class, KategoriRepository::class);
+        $this->app->bind(ProdukRepositoryInterface::class, ProdukRepository::class);
     }
 }
